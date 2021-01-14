@@ -254,6 +254,36 @@ ul {
   flex-basis: calc(100% / 4-30px);
 }
 
+/*Иконки к нашим преимуществам*/
+.features-list {
+  
+}
+
+.features-list-item:nth-child(1)::before {
+  contain: '';
+  display: inline-block;
+  outline: 1px solid tomato;
+  height: 120px;
+  width: 270px;
+  background-color: teal;
+
+ 
+  background-image: url('../images/antenna1.svg');
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: contain;
+  
+}
+
+.features-list-item:nth-child(2)::before {
+  display: block;
+  height: 120px;
+  background-image: url('../images/antenna1.svg');
+  background-repeat: no-repeat;
+  background-size: 70px;
+  background-position: center;
+}
+
 /*кнопка заказать услугу*/
 
 .button-heading {
@@ -382,6 +412,18 @@ ul {
   text-align: center;
 }
 
+.social-network {
+  display: block;
+  
+  padding: 0;
+  border: 0;
+  
+}
+.team-icon {
+width: 44px;
+  height: 44px;
+  fill: #AFB1B8;
+}
 /*contacts*/
 .address {
   margin-top: 20px;
@@ -403,7 +445,7 @@ ul {
   text-decoration: none;
 }
 
-.contacts .link::before {
+.contacts .mail-header::before {
   content:"";
   display: inline-block;
   width: 16px;
@@ -413,6 +455,17 @@ ul {
   background-repeat: no-repeat;
   background-size: contain;
 
+}
+
+.contacts .tel-header::before {
+  content:"";
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/smartphone.svg);
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .contacts .link:hover,
@@ -648,6 +701,30 @@ footer .container {
 
   background-color: var(--sec-background-color);
 }
+.footer-section {
+  display: flex;
+  align-items: flex-start;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+
+.footer-address {
+  display: block;
+  margin-right: 70px;
+  justify-content: flex-start;
+  
+}
+
+.footer-sotial-networks {
+  display: block;
+  justify-content: flex-start;
+  padding: 0;
+}
 
 footer .logo {
   color: white;
@@ -671,4 +748,43 @@ footer .logo {
 }*/
 .email-li {
   margin-bottom: 9px;
+}
+
+/*присоединяйтесь*/
+.join {
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--second-text-accent);
+}
+.join-social-network {
+display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.join-social-network-item {
+  contain: '';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  padding: 0;
+  border: none;
+  background-position: center;
+      
+}
+
+.join-social-network-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-icon {
+  display: block;
+ 
 }

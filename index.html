@@ -27,8 +27,8 @@
                     </ul>
                 </nav>
                 <ul class="contacts">
-                    <li class="mail item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                    <li class="tel item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                    <li class="mail item"><a href="mailto:info@devstudio.com" class="link mail-header">info@devstudio.com</a></li>
+                    <li class="tel item"><a href="tel:+380961111111" class="link tel-header ">+38 096 111 11 11</a></li>
                 </ul>
             </div>
     </header>
@@ -48,7 +48,7 @@
                 <h2 class="visually-hidden">Наши преимущества</h2>
                 <div class="container">
                 <ul class="features-list">
-                    <li class="features-list-item">
+                        <li class="features-list-item">
                         <h3 class="title">Внимание к деталям</h3>
                         <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.
                         </p>
@@ -98,28 +98,52 @@
                         <img src="./images/man-4.jpg" alt="фото мужчины 1" width="270" height="260" />
                         <h3 class="name">Игорь Демьяненко</h3>
                         <p lang="en" class="profession">Product Designer</p>
+                        <a href="" class="social-network">
+                            <svg class="team-icon" width="20px" height="20px">
+                                <use href="./images/sprite-social-network-icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="team-member">
                         <img src="./images/women.jpg" alt="фото женщины 1" width="270" height="260" />
                         <h3 class="name">Ольга Репина</h3>
                         <p lang="en" class="profession">Frontend Developer</p>
+                        <a href="" class="social-network">
+                            <svg class="team-icon" width="20px" height="16.25px">
+                                <use href="./images/sprite-social-network-icons.svg#icon-tweetter"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="team-member">
                         <img src="./images/man-5.jpg" alt="фото мужчины 2" width="270" height="260" />
                         <h3 class="name">Николай Тарасов</h3>
                         <p lang="en" class="profession">Marketing</p>
+                        <a href="" class="social-network">
+                            <svg class="team-icon" width="10px" height="20px">
+                                <use href="./images/sprite-social-network-icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="team-member"> 
                         <img src="./images/man-6.jpg" alt="фото женщины 2" width="270" height="260" />
                         <h3 class="name">Михаил Ермаков</h3>
                         <p lang="en" class="profession">UI Designer</p>
+                        <a href="" class="social-network">
+                            <svg class="team-icon" width="20px" height="20px"">
+                                <use href="./images/sprite-social-network-icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
             </div>
         </section>
+        <section class="regular-customers">
+
+        </section>
     </main>
     <footer>
-        <div class="container">
+        <section class="footer-section">
+        <div class="footer-address">
             <a class="logo" lang="en" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
             <address class="address">
                 г. Киев, пр-т Леси Украинки, 26
@@ -129,6 +153,40 @@
                 <li class="phone-li"><a href="tel:+380961111111" class="phone">+38 096 111 11 11</a></li>
             </ul>
         </div>
+        <div class=" footer-sotial-networks">
+         <h3 class="join">присоединяйтесь</h3>
+         <ul class="join-social-network">
+            <li class="join-social-network-item">
+                <a href="">
+                    <svg class="link-icon" width="20px" height="20px">
+                    <use href="./images/sprite-social-network-icons.svg#icon-instagram-2"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="join-social-network-item">
+                <a href="">
+                    <svg class="link-icon" width="20px" height="16.25px">
+                        <use href="./images/sprite-social-network-icons.svg#icon-tweetter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="join-social-network-item">
+                <a href="">
+                    <svg class="link-icon" width="10px" height="20px">
+                        <use href="./images/sprite-social-network-icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="join-social-network-item">
+                <a class="link-icon" href="">
+                    <svg class="" width="20px" height="20px">
+                        <use href="./images/sprite-social-network-icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+        </div>
+        </section>
     </footer>
 
 </body>
