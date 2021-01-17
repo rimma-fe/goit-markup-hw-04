@@ -172,13 +172,12 @@ ul {
     ),
   
   url(../images/hero-img.jpg);
-   
-  background-color: var{--sec-background-color};
+  background-color: var(--sec-background-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  
-}
+} 
+
 
 /.hero {
   outline: 2px solid tomato;
@@ -214,7 +213,7 @@ ul {
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
+  
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -403,7 +402,7 @@ ul {
 /*our duties*/
 .our-duties {
   padding-bottom: 94px;
-  outline: 2px solid tomato;
+ 
 }
 .our-duties-list {
   display: flex;
@@ -426,7 +425,7 @@ ul {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+  
 }
 
 .our-team {
@@ -892,5 +891,9 @@ display: flex;
 }
 
 .tweetter {
+  fill: #ffffff;
+}
+
+.in {
   fill: #ffffff;
 }
