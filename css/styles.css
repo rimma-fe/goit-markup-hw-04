@@ -612,32 +612,23 @@ letter-spacing: 0.03em;
   text-decoration: none;
 }
 
-.contacts .mail-header::before {
-  content:"";
-  display: inline-block;
+.mail-icon {
   width: 16px;
   height: 12px;
-  background-image: url(../images/envelope.svg);
   margin-right: 10px;
-  background-repeat: no-repeat;
-  background-size: contain;
-
+  fill: currentColor;
 }
-
-.contacts .tel-header::before {
-  content:"";
-  display: inline-block;
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/smartphone.svg);
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent);
+  fill: #2196f3;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .contacts {
@@ -730,7 +721,7 @@ letter-spacing: 0.03em;
   width: 370px;
   flex-basis: calc(100% / 3 - 30px);
   border: 1px solid #eeeeee;
-  background-color: tomato;
+  
 }
 
 .project-item:nth-child(-n + 3) {
@@ -779,7 +770,7 @@ letter-spacing: 0.03em;
 }
 
 footer {
-  outline: 2px solid tomato;
+  
   padding-top: 60px;
   padding-bottom: 60px;
   /*padding-left: 215px;
@@ -854,6 +845,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--second-text-accent);
+margin-bottom: 20px;
 }
 .join-social-network {
 display: flex;
