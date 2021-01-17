@@ -1,5 +1,5 @@
 :root {
-  --primary-text-color: #757575;
+  --primary-text-color: #757575; 
   --title-text-color: #212121;
   --accent: #2196f3;
   --second-text-accent: #ffffff;
@@ -255,11 +255,11 @@ ul {
 }
 
 /*Иконки к нашим преимуществам*/
-.features-list {
+.features-list:: {
   
 }
 
-.features-list-item:nth-child(1)::before {
+.features-list-item:::before {
   contain: '';
   display: inline-block;
   outline: 1px solid tomato;
@@ -337,13 +337,17 @@ ul {
    
 }
 
-.advantages-icon-item {
+.feature-icon-container {
   display: flex;
-  
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
   width: 270px;
   height: 120px;
-  background-color: cyan;
-  margin
+  border-radius: 4px;
+  background-color: var(--third-background-color);
+  
 }
 
 .advantages-icon {
@@ -351,8 +355,7 @@ ul {
   
   width: 70px;
   height: 70px;
-  align-items: center;
-  justify-content: center;
+  
   
   background-repeat: no-repeat;
   background-position: center;
