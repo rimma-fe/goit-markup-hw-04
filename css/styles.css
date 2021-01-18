@@ -5,7 +5,7 @@
   --second-text-accent: #ffffff;
   --background-color: #ffffff;
   --sec-background-color: #2f303a;
-  --third-background-color: #f5f4fa;
+  --third-background-color: #f5f4fa;#F5F4FA
   --logo-color: #000000;
   --filter-color: #f5f4fa;
 }
@@ -152,7 +152,7 @@ ul {
 }
 
 .header .container {
-  outline: 2px solid tomato;
+  
   padding-left: 15px;
   padding-right: 15px;
   width: 1200px;
@@ -180,7 +180,7 @@ ul {
 
 
 /.hero {
-  outline: 2px solid tomato;
+ 
   margin-top: 0;
   margin-bottom: 0px;
   text-align: center;
@@ -253,35 +253,10 @@ ul {
   flex-basis: calc(100% / 4-30px);
 }
 
-/*Иконки к нашим преимуществам*/
-.features-list:: {
-  
-}
 
-.features-list-item:::before {
-  contain: '';
-  display: inline-block;
-  outline: 1px solid tomato;
-  height: 120px;
-  width: 270px;
-  background-color: teal;
 
- 
-  background-image: url('../images/antenna1.svg');
-  background-repeat: no-repeat;
-  background-size: 70px;
-  background-position: contain;
-  
-}
 
-.features-list-item:nth-child(2)::before {
-  display: block;
-  height: 120px;
-  background-image: url('../images/antenna1.svg');
-  background-repeat: no-repeat;
-  background-size: 70px;
-  background-position: center;
-}
+
 
 /*кнопка заказать услугу*/
 
@@ -691,14 +666,21 @@ letter-spacing: 0.03em;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  border-color: var(--filter-color);
+  border: var(--third-background-color);
   background-color: var(--filter-color);
   cursor: pointer;
 }
 
-.filter:hover {
+.filter:hover,
+.filter:focus {
   background-color: var(--accent);
-  border-color: var(--accent);
+  color: var(--second-text-accent)
+  border: var(--accent);
+ 
+box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+              0px 4px 4px rgba(0, 0, 0, 0.06),
+              0px 1px  1px rgba(0, 0, 0, 0.12);
+
 }
 
 /*2 вариант*/
@@ -712,7 +694,7 @@ letter-spacing: 0.03em;
   margin-top: -30px;
   margin-bottom: 94px;
   list-style: none;
-  background-color: teal;
+  
 }
 
 .project-item {
@@ -722,11 +704,10 @@ letter-spacing: 0.03em;
   flex-basis: calc(100% / 3 - 30px);
   border: 1px solid #eeeeee;
   
+  
 }
 
-.project-item:nth-child(-n + 3) {
-  margin-top: 0;
-}
+
 
 
 .img-card {
@@ -735,9 +716,15 @@ letter-spacing: 0.03em;
 
 .project-link {
   display: block;
+  
 }
 
-
+.project-item :hover,
+.project-item :focus {
+box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
+              0px 4px 4px rgba(0, 0, 0, 0.06),
+              0px 1px  1px rgba(0, 0, 0, 0.12);
+}
 .card-body {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -767,6 +754,7 @@ letter-spacing: 0.03em;
 }
 .project-link {
   text-decoration: none;
+
 }
 
 footer {
@@ -814,7 +802,7 @@ footer .container {
 }
 
 footer .logo {
-  color: white;
+  color: var(--background-color);
 }
 
 .header .logo {
@@ -874,7 +862,7 @@ display: flex;
 
 .join-social-network-item :hover,
 .join-social-network-item :focus {
-  background-color: #2196f3;
+  background-color: var(--accent);
 }
 
 .link-icon {
@@ -883,9 +871,9 @@ display: flex;
 }
 
 .tweetter {
-  fill: #ffffff;
+  fill: var(--background-color);
 }
 
 .in {
-  fill: #ffffff;
+  fill: var(--background-color);
 }
