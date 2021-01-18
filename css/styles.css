@@ -5,9 +5,10 @@
   --second-text-accent: #ffffff;
   --background-color: #ffffff;
   --sec-background-color: #2f303a;
-  --third-background-color: #f5f4fa;#F5F4FA
+  --third-background-color: #f5f4fa;
   --logo-color: #000000;
   --filter-color: #f5f4fa;
+   --border-color: #ececec;
 }
 body {
   margin: 0;
@@ -59,7 +60,7 @@ body {
 
 .header-info {
   /*display: flex;*/
-  border: 1px solid #ececec;
+  border: 1px solid var(--border-color);
 }
 
 .main-container {
@@ -596,7 +597,7 @@ letter-spacing: 0.03em;
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--accent);
-  fill: #2196f3;
+  fill: var(--accent);
 }
 
 .tel-icon {
@@ -674,7 +675,7 @@ letter-spacing: 0.03em;
 .filter:hover,
 .filter:focus {
   background-color: var(--accent);
-  color: var(--second-text-accent)
+  color: var(--second-text-accent);
   border: var(--accent);
  
 box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
@@ -702,7 +703,7 @@ box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
   margin-top: 30px;
   width: 370px;
   flex-basis: calc(100% / 3 - 30px);
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--background-color);
   
   
 }
@@ -736,7 +737,7 @@ box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16),
   margin-top: 0;
   margin-bottom: 0;
 
-  color: #212121;
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -761,8 +762,7 @@ footer {
   
   padding-top: 60px;
   padding-bottom: 60px;
-  /*padding-left: 215px;
-  padding-right: 215pxpx;*/
+  
   background-color: var(--sec-background-color);
 }
 
