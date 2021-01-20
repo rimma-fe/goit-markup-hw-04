@@ -517,39 +517,65 @@ cursor: pointer;
 
 .customers-list {
   display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
+  
   list-style: none;
 }
 
-.customers-list-item .customers-link {
+.customers-link {
+  
   display: flex;
-  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
   padding: 0;
+  margin: 0;
+  border: none;
+ 
   
-  fill: var(--icons-list-color);
+  
+  color: var(--icons-list-color);
   cursor: pointer;
+  text-decoration: none;
+  border: 1px solid var(--icons-list-color);
+  border-radius: 4px;
+}
+  
+.customers-link:hover,
+.customers-link:focus {
+  fill: var(--accent);
+  border: 1px solid blue;
 }
 
 .customers-list-item {
-  display: inline-flex;
-  width: 170px;
-  height: 90px;
-  border: 1px solid var(--icons-list-color);
+  
 }
 
+ .customers-list-item:hover,
+ .customers-list-item:focus {
 
-.customers-list-item :hover,
-.customers-list-item :focus {
-  fill: var(--accent);
-  border: 1px solid var(--accent);
-}
+ } 
 
 .customers-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-
+.customers-icon {
+  display: flex;
+  margin: 0;
+  padding: 0;mail-header
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  fill: currentColor;
+}
 
 
 
