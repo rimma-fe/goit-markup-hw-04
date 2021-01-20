@@ -9,7 +9,9 @@
   --logo-color: #000000;
   --filter-color: #f5f4fa;
    --border-color: #ececec;
+   --icons-list-color: #AFB1B8;
 }
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -466,7 +468,7 @@ padding-right: 32px;
   height: 44px;
   padding: 0;
   background-color: var(--background-color);
-  color: var(--primary-text-color);
+  color: var(--icons-list-color);
   border-radius: 50%;
   border: none;
   background-position: center;
@@ -515,55 +517,39 @@ cursor: pointer;
 
 .customers-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0;
   margin: 0;
   list-style: none;
-  
 }
 
-.customers-link {
+.customers-list-item .customers-link {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  fill: #AFB1B8;
   
+  padding: 0;
   
+  fill: var(--icons-list-color);
+  cursor: pointer;
+}
+
+.customers-list-item {
+  display: inline-flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icons-list-color);
+}
+
+
+.customers-list-item :hover,
+.customers-list-item :focus {
+  fill: var(--accent);
+  border: 1px solid var(--accent);
 }
 
 .customers-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
-.customers-list-item {
-  
-  display: flex;
-  width: 170px;
-  height: 90px;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  
-  
- border: 1px solid #AFB1B8;
-  border-radius: 4px;
-  cursor: pointer;
-  
-  fill: currentColor;
-  background-position: center;
-}
 
-.customers-list-item:hover,
-.customers-list-item:focus {
-  fill: var(--accent);
-  border: 1px solid var(--accent);
-}
-
-customers-icon :hover,
-customers-icon :hover {
-fill: var(--accent);
-}
 
 
 
