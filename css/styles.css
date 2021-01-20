@@ -540,7 +540,7 @@ cursor: pointer;
  
   
   
-  color: var(--icons-list-color);
+  fill: var(--icons-list-color);
   cursor: pointer;
   text-decoration: none;
   border: 1px solid var(--icons-list-color);
@@ -550,17 +550,14 @@ cursor: pointer;
 .customers-link:hover,
 .customers-link:focus {
   fill: var(--accent);
-  border: 1px solid blue;
+  border: 1px solid var(--accent);
 }
 
 .customers-list-item {
   
 }
 
- .customers-list-item:hover,
- .customers-list-item:focus {
-
- } 
+ 
 
 .customers-list-item:not(:last-child) {
   margin-right: 30px;
@@ -569,12 +566,13 @@ cursor: pointer;
 .customers-icon {
   display: flex;
   margin: 0;
-  padding: 0;mail-header
+  padding: 0;
   text-align: center;
   justify-content: center;
   align-items: center;
   background-position: center;
-  fill: currentColor;
+  /*fill: currentColor;*/
+
 }
 
 
